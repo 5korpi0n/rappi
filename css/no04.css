@@ -1,0 +1,150 @@
+
+  @-webkit-keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  @keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  .app-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all .3s linear;
+    background-color: #fafaf8
+  }
+
+  .app-container .total-width {
+    width: 100%;
+    padding: 0
+  }
+
+  .app-container>div {
+    transition: all .3s ease;
+    width: 1440px;
+    min-height: 900px;
+    padding-left: 20px;
+    padding-right: 20px
+  }
+
+  .app-container>div>span {
+    display: block;
+    margin: auto;
+    max-width: 1440px
+  }
+
+  .app-container app-footer {
+    display: block;
+    width: 100%
+  }
+
+  .app-container.checkout {
+    background: #fafaf8;
+    min-height: 100vh
+  }
+
+  .app-container.checkout:after {
+    clear: both
+  }
+
+  .app-container.checkout:after,
+  .app-container.checkout:before {
+    content: " ";
+    display: table
+  }
+
+  .app-container.header-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 60px;
+    width: 100%
+  }
+
+  .app-container.with-search-bar {
+    padding-top: 0
+  }
+
+  #toast-container .ngx-toaster,
+  #toast-container>div {
+    opacity: 1 !important
+  }
+
+  .ab-in-app-message.ab-slideup {
+    font-family: Poppins-Regular, Helvetica, Arial, sans-serif !important;
+    top: 60px !important;
+    border-radius: 8px !important
+  }
+
+  @media only screen and (max-width:1440px),
+  screen and (orientation:portrait) {
+    .app-container>div {
+      max-width: 1360px;
+      width: 100%
+    }
+  }
+
+  @media only screen and (max-width:1280px),
+  screen and (orientation:portrait) {
+    .app-container>div {
+      max-width: 1240px;
+      width: 100%
+    }
+  }
+
+  @media only screen and (max-width:1024px),
+  screen and (orientation:portrait) {
+    .app-container>div {
+      width: 100%
+    }
+
+    .app-container.header-active {
+      padding-top: 50px
+    }
+
+    .app-container.header-active .active-order {
+      padding-top: 30px
+    }
+
+    .app-container.header-active.basic,
+    .app-container.header-active.light {
+      padding-top: 0
+    }
+
+    .app-container.menu-active .float-menu {
+      padding-left: 0
+    }
+
+    .app-container.with-search-bar {
+      padding-top: 0
+    }
+  }
+
+  @media only screen and (max-width:480px),
+  screen and (orientation:portrait) {
+    .app-container>div {
+      padding-left: 0;
+      padding-right: 0
+    }
+  }
+
+  @media only screen and (max-width:480px) {
+    .app-container>div {
+      transition: all .3s ease;
+      min-height: 700px
+    }
+  }

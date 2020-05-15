@@ -1,0 +1,74 @@
+
+  @-webkit-keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  @keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  .badges-card-container[_ngcontent-ng-web-c47] {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #fff
+  }
+
+  .title[_ngcontent-ng-web-c47] {
+    font-size: 25px;
+    font-family: Poppins-SemiBold, Helvetica, Arial, sans-serif;
+    color: #332927
+  }
+
+  .badge-row[_ngcontent-ng-web-c47] {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap
+  }
+
+  .badge-row[_ngcontent-ng-web-c47] .badge[_ngcontent-ng-web-c47] {
+    margin-right: 5px
+  }
+
+  .badge[_ngcontent-ng-web-c47] {
+    margin-top: 20px;
+    height: 32px;
+    border: 2px solid #efece9;
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #fff;
+    font-family: Poppins-Regular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #b8b4b4
+  }
+
+  @media only screen and (min-width:1281px) {
+    .title[_ngcontent-ng-web-c47] {
+      font-size: 40px
+    }
+
+    .badges-card-container[_ngcontent-ng-web-c47] {
+      margin-bottom: 100px;
+      padding: 50px
+    }
+  }

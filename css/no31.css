@@ -1,0 +1,7 @@
+  .no-search-results-content {
+    display: none
+  }
+
+  .no-search-results-content.active {
+    display: block
+  }

@@ -1,0 +1,73 @@
+
+  @-webkit-keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  @keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  .home-container {
+    padding: 0;
+    width: 90%;
+    margin: auto
+  }
+
+  .with-margin {
+    margin-top: 100px
+  }
+
+  .faq-container {
+    width: 100%
+  }
+
+  app-download-card .download-card {
+    margin-top: 168px;
+    margin-bottom: 168px
+  }
+
+  app-banner .banner-container {
+    margin-bottom: 100px
+  }
+
+  @media only screen and (max-width:768px),
+  screen and (orientation:portrait) {
+    .home-container {
+      padding: 0 14px;
+      width: auto
+    }
+
+    .with-margin {
+      margin-top: 50px
+    }
+
+    app-download-card .download-card {
+      margin-top: 50px;
+      margin-bottom: 10px
+    }
+
+    app-banner .banner-container {
+      margin-bottom: 20px
+    }
+
+    app-banner .banner-container .banner .title {
+      margin: 0 0 40px;
+      padding: 0 14px
+    }
+
+    app-banner .banner-container .location-container {
+      padding: 0 14px
+    }
+  }

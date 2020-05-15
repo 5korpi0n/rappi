@@ -1,0 +1,282 @@
+    @-webkit-keyframes progress {
+      0% {
+        transform: translateX(-100%)
+      }
+
+      100% {
+        transform: translateX(100%)
+      }
+    }
+
+    @keyframes progress {
+      0% {
+        transform: translateX(-100%)
+      }
+
+      100% {
+        transform: translateX(100%)
+      }
+    }
+
+    .cont-country {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: row;
+      height: 60px;
+      cursor: pointer;
+      position: relative;
+      padding: 0 20px;
+      width: 230px;
+      align-content: center
+    }
+
+    .cont-country .active-country {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%
+    }
+
+    .cont-country .active-country img,
+    .cont-country .active-country p {
+      display: inline-block;
+      vertical-align: middle;
+      zoom: 1
+    }
+
+    .cont-country .active-country p {
+      flex: 1;
+      padding: 0 10px;
+      position: relative;
+      color: #7d7d7d
+    }
+
+    .cont-country .active-country i {
+      transition: all .3s linear;
+      color: #332927
+    }
+
+    .cont-country img {
+      border-radius: 8px;
+      width: 24px;
+      height: auto
+    }
+
+    .cont-country .location-select-cnt {
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-start;
+      flex-direction: row;
+      transition: all .3s linear;
+      position: absolute;
+      top: 40px;
+      left: -10px;
+      background-color: #fff;
+      box-shadow: 0 32px 32px 0 rgba(0, 0, 0, .05);
+      opacity: 0;
+      visibility: hidden;
+      z-index: 10;
+      border-radius: 0 0 8px 8px;
+      overflow: hidden
+    }
+
+    .cont-country .location-select-cnt.show {
+      top: 60px;
+      opacity: 1;
+      visibility: visible
+    }
+
+    .cont-country .location-select-cnt ul {
+      background: #fff
+    }
+
+    .cont-country .location-select-cnt ul.country-select {
+      min-width: 240px
+    }
+
+    .cont-country .location-select-cnt ul.country-select li {
+      transition: all .3s linear;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 10px
+    }
+
+    .cont-country .location-select-cnt ul.country-select li.city-list:hover {
+      background: #e5edef
+    }
+
+    .cont-country .location-select-cnt ul.country-select li a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+      cursor: pointer
+    }
+
+    .cont-country .location-select-cnt ul.country-select li a p {
+      transition: all .3s linear;
+      padding-left: 10px;
+      color: #7d7d7d
+    }
+
+    .cont-country .location-select-cnt ul.country-select li a i {
+      color: #9faab7;
+      flex: 1;
+      text-align: right
+    }
+
+    .cont-country .location-select-cnt ul.country-select li.active,
+    .cont-country .location-select-cnt ul.country-select li:hover {
+      background-color: rgba(255, 68, 31, .05)
+    }
+
+    .cont-country .location-select-cnt ul.country-select li.active p,
+    .cont-country .location-select-cnt ul.country-select li:hover p {
+      color: #ff441f
+    }
+
+    .cont-country .location-select-cnt ul.city-select {
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-start;
+      flex-direction: row;
+      -webkit-overflow-scrolling: touch;
+      align-content: center;
+      min-width: 340px;
+      flex-wrap: wrap;
+      overflow: auto;
+      padding: 0 0 0 20px
+    }
+
+    .cont-country .location-select-cnt ul.city-select::-webkit-scrollbar-track {
+      border-radius: 20px;
+      background-color: transparent
+    }
+
+    .cont-country .location-select-cnt ul.city-select::-webkit-scrollbar {
+      width: 4px
+    }
+
+    .cont-country .location-select-cnt ul.city-select::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #fafaf8
+    }
+
+    .cont-country .location-select-cnt ul.city-select li {
+      transition: all .3s linear;
+      width: 50%;
+      line-height: 46px;
+      height: 46px;
+      overflow: hidden
+    }
+
+    .cont-country .location-select-cnt ul.city-select li p {
+      transition: all .3s linear;
+      color: #c7c7c7;
+      padding: 0 10px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden
+    }
+
+    .cont-country .location-select-cnt ul.city-select li:hover {
+      background-color: rgba(255, 68, 31, .05)
+    }
+
+    .cont-country .location-select-cnt ul.city-select li:hover p {
+      color: #ff441f
+    }
+
+    .country-container {
+      padding-bottom: 10px
+    }
+
+    .country-container .title-container {
+      text-align: start;
+      padding: 15px 16px;
+      max-width: 80%
+    }
+
+    .country-container hr {
+      height: 1px;
+      width: 80%;
+      margin: 10px auto 20px;
+      background-color: #e5edef;
+      padding: 0 10px
+    }
+
+    .country-container .country-select-mobile {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap
+    }
+
+    .country-container .country-select-mobile li {
+      width: 50%;
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-start;
+      flex-direction: row
+    }
+
+    .country-container .country-select-mobile li a {
+      font-size: 12px;
+      margin: 12px 0 12px 16px;
+      width: 100%;
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-start;
+      flex-direction: row
+    }
+
+    .country-container .country-select-mobile li a img {
+      margin-right: 8px;
+      border-radius: 50%
+    }
+
+    @media only screen and (min-width:768px) and (max-width:1024px),
+    screen and (orientation:portrait) {
+      .cont-country {
+        height: 0;
+        margin-bottom: 20px;
+        min-width: 0
+      }
+
+      .cont-country .active-country p {
+        flex: 1;
+        padding: 0 10px
+      }
+
+      .cont-country .location-select-cnt {
+        left: 0;
+        width: 100%
+      }
+
+      .cont-country .location-select-cnt.show {
+        top: 40px
+      }
+
+      .cont-country .location-select-cnt ul.country-select {
+        width: 100%
+      }
+    }
+
+    @media only screen and (max-width:768px) {
+      .cont-country {
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        padding: 0;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        margin: 0
+      }
+
+      .cont-country .active-country img {
+        border-radius: 50%
+      }
+    }

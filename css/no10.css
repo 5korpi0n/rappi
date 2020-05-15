@@ -1,0 +1,117 @@
+
+  @-webkit-keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  @keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  .address-select {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+    height: 50px;
+    padding: 0 21px;
+    cursor: pointer
+  }
+
+  .address-select .enter-address-container {
+    width: 100%
+  }
+
+  .address-select>i {
+    font-size: 24px;
+    color: #332927
+  }
+
+  .address-select .address {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    transition: all .3s linear;
+    text-align: left;
+    position: relative;
+    width: 100%
+  }
+
+  .address-select .address p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #332927;
+    font-size: 14px;
+    font-family: Poppins-SemiBold, Helvetica, Arial, sans-serif;
+    width: 150px;
+    padding: 0 15px 0 5px
+  }
+
+  .address-select .address i {
+    transition: all .3s linear;
+    font-size: 20px;
+    color: #332927
+  }
+
+  .address-select:hover>div.address {
+    color: #ff2425
+  }
+
+  .address-select:hover>div.address span i {
+    color: #ff2425;
+    transform: rotate(-90deg)
+  }
+
+  @media only screen and (max-width:1024px),
+  screen and (orientation:portrait) {
+    .address-select {
+      margin: auto;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 0
+    }
+
+    .address-select>div.address-subtitle {
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-start;
+      flex-direction: row;
+      font-size: 12px;
+      margin-left: 5px;
+      align-self: flex-start
+    }
+
+    .address-select>div i,
+    .address-select>div.address {
+      color: #7d7d7d
+    }
+
+    .address-select>div.address {
+      font-size: 12px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: row
+    }
+
+    .address-select>div.address p {
+      width: 100%
+    }
+  }

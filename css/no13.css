@@ -1,0 +1,60 @@
+
+  @-webkit-keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  @keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  .basket-tooltip-wrapper[_ngcontent-ng-web-c27] button[_ngcontent-ng-web-c27] {
+    height: 25px;
+    width: 25px;
+    padding: 0;
+    background-color: transparent;
+    position: relative
+  }
+
+  .basket-tooltip-wrapper[_ngcontent-ng-web-c27] button[_ngcontent-ng-web-c27] small[_ngcontent-ng-web-c27] {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    background: #ff441f;
+    font-family: Poppins-SemiBold, Helvetica, Arial, sans-serif;
+    min-width: 15px;
+    max-height: 15px
+  }
+
+  .basket-tooltip-wrapper[_ngcontent-ng-web-c27] button[_ngcontent-ng-web-c27] i[_ngcontent-ng-web-c27] {
+    transition: all .3s linear;
+    line-height: 25px;
+    font-size: 20px;
+    display: inline-block
+  }
+
+  .basket-tooltip-wrapper[_ngcontent-ng-web-c27] button[_ngcontent-ng-web-c27] i[_ngcontent-ng-web-c27]:after,
+  .basket-tooltip-wrapper[_ngcontent-ng-web-c27] button[_ngcontent-ng-web-c27] i[_ngcontent-ng-web-c27]:before {
+    color: #332927
+  }
+
+  .basket-tooltip-wrapper[_ngcontent-ng-web-c27]:hover i[_ngcontent-ng-web-c27] {
+    color: #ff2425
+  }

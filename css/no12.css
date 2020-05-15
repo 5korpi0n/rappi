@@ -1,0 +1,251 @@
+
+  @-webkit-keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  @keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #ff441f;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] i[_ngcontent-ng-web-c26] {
+    font-size: 14px
+  }
+
+  .generic-tooltip.address-description[_ngcontent-ng-web-c26] {
+    width: 100%;
+    justify-content: flex-start
+  }
+
+  .generic-tooltip.address-description[_ngcontent-ng-web-c26] .input-content[_ngcontent-ng-web-c26] {
+    width: 100%
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] {
+    display: none;
+    background-color: #332927;
+    width: 290px;
+    position: absolute;
+    border-radius: 8px;
+    z-index: 10;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    font-family: Poppins-Regular, Helvetica, Arial, sans-serif
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] h4.title[_ngcontent-ng-web-c26] {
+    color: #ff441f;
+    margin-bottom: 5px;
+    font-family: Poppins-SemiBold, Helvetica, Arial, sans-serif
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] p.content[_ngcontent-ng-web-c26] {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 100;
+    text-align: center
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] ul.list[_ngcontent-ng-web-c26] {
+    margin: 10px 0 0
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] ul.list[_ngcontent-ng-web-c26] li[_ngcontent-ng-web-c26] {
+    position: relative;
+    padding: 0 10px
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] ul.list[_ngcontent-ng-web-c26] li[_ngcontent-ng-web-c26] p[_ngcontent-ng-web-c26] {
+    color: #fff
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] ul.list[_ngcontent-ng-web-c26] li[_ngcontent-ng-web-c26]::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #ff441f;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 4px auto
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] ul.list-with-icons[_ngcontent-ng-web-c26] {
+    margin: 15px 0 0
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] ul.list-with-icons[_ngcontent-ng-web-c26] li[_ngcontent-ng-web-c26] {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 15px 0
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] ul.list-with-icons[_ngcontent-ng-web-c26] li[_ngcontent-ng-web-c26] i[_ngcontent-ng-web-c26],
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] ul.list-with-icons[_ngcontent-ng-web-c26] li[_ngcontent-ng-web-c26] span[_ngcontent-ng-web-c26] {
+    color: #fff
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] ul.list-with-icons[_ngcontent-ng-web-c26] li[_ngcontent-ng-web-c26] i[_ngcontent-ng-web-c26] {
+    font-size: 20px;
+    margin: 0 10px 0 0
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] ul.list-with-icons[_ngcontent-ng-web-c26] li[_ngcontent-ng-web-c26] span[_ngcontent-ng-web-c26] {
+    font-size: 14px
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content[_ngcontent-ng-web-c26] ul.list-with-icons[_ngcontent-ng-web-c26] li[_ngcontent-ng-web-c26] i[_ngcontent-ng-web-c26]:last-of-type {
+    color: #ff441f;
+    font-size: 8px;
+    position: absolute;
+    top: 25%;
+    right: 0
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content.tooltip-top[_ngcontent-ng-web-c26] {
+    left: -137px;
+    bottom: 27px
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content.tooltip-top[_ngcontent-ng-web-c26]:after {
+    top: 100%;
+    left: 50%;
+    border: 10px solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #332927;
+    margin-left: -10px
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content.tooltip-top-center[_ngcontent-ng-web-c26] {
+    width: 240px;
+    left: -22px;
+    bottom: 27px
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content.tooltip-top-center[_ngcontent-ng-web-c26]:after {
+    top: 100%;
+    left: 13.5%;
+    border: 10px solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #332927;
+    margin-left: -10px
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content.tooltip-bottom[_ngcontent-ng-web-c26] {
+    left: -137px;
+    top: 27px
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content.tooltip-bottom[_ngcontent-ng-web-c26]:after {
+    content: " ";
+    position: absolute;
+    top: -20px;
+    left: 49.5%;
+    height: 0;
+    width: 0;
+    margin-left: -10px;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #332927
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content.tooltip-bottom.address-description[_ngcontent-ng-web-c26] {
+    left: 15px;
+    top: 80px
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content.tooltip-right[_ngcontent-ng-web-c26] {
+    left: 30px;
+    top: -30px
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content.tooltip-right[_ngcontent-ng-web-c26]:after {
+    content: " ";
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    height: 0;
+    width: 0;
+    margin-left: -10px;
+    border-right: 10px solid #332927;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content.tooltip-bottom-left[_ngcontent-ng-web-c26] {
+    right: -12px;
+    top: 35px
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26] .tooltip-content.tooltip-bottom-left[_ngcontent-ng-web-c26]:before {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 88%;
+    height: 0;
+    width: 5px;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #332927;
+    border-left: 10px solid transparent;
+    transform: rotate(180deg)
+  }
+
+  .generic-tooltip[_ngcontent-ng-web-c26]:hover .tooltip-content[_ngcontent-ng-web-c26],
+  .generic-tooltip[_ngcontent-ng-web-c26]:hover .tooltip-content[_ngcontent-ng-web-c26] p[_ngcontent-ng-web-c26] {
+    display: block
+  }
+
+  @media only screen and (max-width:1024px) {
+    .generic-tooltip[_ngcontent-ng-web-c26] {
+      margin: 0;
+      padding: 0
+    }
+  }

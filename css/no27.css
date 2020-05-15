@@ -1,0 +1,91 @@
+    @-webkit-keyframes progress {
+      0% {
+        transform: translateX(-100%)
+      }
+
+      100% {
+        transform: translateX(100%)
+      }
+    }
+
+    @keyframes progress {
+      0% {
+        transform: translateX(-100%)
+      }
+
+      100% {
+        transform: translateX(100%)
+      }
+    }
+
+    .download-card[_ngcontent-ng-web-c44] {
+      margin-bottom: 114px
+    }
+
+    .download-card-content[_ngcontent-ng-web-c44] {
+      width: 100%;
+      border-radius: 15px;
+      background-color: #fff;
+      height: 21em;
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      flex-direction: row
+    }
+
+    .download-card-content[_ngcontent-ng-web-c44] .info[_ngcontent-ng-web-c44] {
+      padding: 50px 50px 0
+    }
+
+    .download-card-content[_ngcontent-ng-web-c44] .info[_ngcontent-ng-web-c44] .redirects[_ngcontent-ng-web-c44] {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row
+    }
+
+    .download-card-content[_ngcontent-ng-web-c44] .info[_ngcontent-ng-web-c44] .redirects[_ngcontent-ng-web-c44] .redirect-download[_ngcontent-ng-web-c44] {
+      display: inline;
+      margin-right: 0
+    }
+
+    .download-card-content[_ngcontent-ng-web-c44] .info[_ngcontent-ng-web-c44] .redirects[_ngcontent-ng-web-c44] .redirect-download[_ngcontent-ng-web-c44] .android-img[_ngcontent-ng-web-c44] {
+      max-width: 147px
+    }
+
+    .download-card-content[_ngcontent-ng-web-c44] .info[_ngcontent-ng-web-c44] .redirects[_ngcontent-ng-web-c44] .redirect-download[_ngcontent-ng-web-c44] .ios-img[_ngcontent-ng-web-c44] {
+      max-width: 127px
+    }
+
+    .download-card-content[_ngcontent-ng-web-c44] .info[_ngcontent-ng-web-c44] .title[_ngcontent-ng-web-c44] {
+      font-size: 40px;
+      font-family: Poppins-SemiBold, Helvetica, Arial, sans-serif;
+      color: #332927;
+      margin-bottom: 20px
+    }
+
+    .download-card-content[_ngcontent-ng-web-c44] .effect[_ngcontent-ng-web-c44] {
+      min-width: 580px;
+      max-width: 600px;
+      position: relative;
+      top: -100px
+    }
+
+    @media only screen and (max-width:480px) {
+      .download-card-content[_ngcontent-ng-web-c44] {
+        flex-direction: column
+      }
+
+      .download-card-content[_ngcontent-ng-web-c44] .info[_ngcontent-ng-web-c44] .redirects[_ngcontent-ng-web-c44] .redirect-download[_ngcontent-ng-web-c44] {
+        margin-right: 0
+      }
+
+      .download-card-content[_ngcontent-ng-web-c44] .info[_ngcontent-ng-web-c44] .title[_ngcontent-ng-web-c44] {
+        font-size: 20px
+      }
+
+      .download-card-content[_ngcontent-ng-web-c44] .effect[_ngcontent-ng-web-c44] {
+        min-width: auto;
+        top: -40px
+      }
+    }

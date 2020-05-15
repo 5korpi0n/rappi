@@ -1,0 +1,131 @@
+    @-webkit-keyframes progress {
+      0% {
+        transform: translateX(-100%)
+      }
+
+      100% {
+        transform: translateX(100%)
+      }
+    }
+
+    @keyframes progress {
+      0% {
+        transform: translateX(-100%)
+      }
+
+      100% {
+        transform: translateX(100%)
+      }
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28] {
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      min-width: 162px;
+      border: 1px solid #e5edef;
+      border-radius: 2px;
+      background: #fff;
+      transition: all .3s linear;
+      opacity: 0;
+      visibility: hidden;
+      top: 41px
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28] .free-shipping-condition[_ngcontent-ng-web-c28] {
+      width: 320px
+    }
+
+    .toast-basket.show[_ngcontent-ng-web-c28] {
+      opacity: 1;
+      visibility: visible;
+      z-index: 2;
+      top: 51px
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28]::after,
+    .toast-basket[_ngcontent-ng-web-c28]::before {
+      content: "";
+      position: absolute;
+      right: 10px;
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28]::before {
+      top: -9px;
+      border-bottom: 8px solid #e5edef
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28]::after {
+      top: -7px;
+      border-bottom: 8px solid #fff
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28] li[_ngcontent-ng-web-c28] {
+      padding: 10px;
+      border-bottom: 1px solid #fafaf8
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28] li[_ngcontent-ng-web-c28]:last-child {
+      border: none
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28] .toast-basket-product[_ngcontent-ng-web-c28] {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28] .toast-basket-product[_ngcontent-ng-web-c28]>div[_ngcontent-ng-web-c28] {
+      display: inline-block;
+      zoom: 1;
+      vertical-align: middle
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28] .toast-basket-product[_ngcontent-ng-web-c28] .cont-img[_ngcontent-ng-web-c28] {
+      width: 45px
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28] .toast-basket-product[_ngcontent-ng-web-c28] .cont-img[_ngcontent-ng-web-c28] div[_ngcontent-ng-web-c28] {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+      vertical-align: middle
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28] .toast-basket-product[_ngcontent-ng-web-c28] .cont-img[_ngcontent-ng-web-c28] div[_ngcontent-ng-web-c28] img[_ngcontent-ng-web-c28] {
+      display: block;
+      height: 45px;
+      -o-object-fit: contain;
+      object-fit: contain;
+      width: 45px
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28] .toast-basket-product[_ngcontent-ng-web-c28] .cont-text[_ngcontent-ng-web-c28] {
+      margin-left: 5px
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28] .toast-basket-product[_ngcontent-ng-web-c28] .cont-text[_ngcontent-ng-web-c28] p[_ngcontent-ng-web-c28] {
+      font-size: 16px;
+      font-weight: 600;
+      color: #332927
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28] .toast-basket-product[_ngcontent-ng-web-c28] .cont-text[_ngcontent-ng-web-c28] small[_ngcontent-ng-web-c28] {
+      font-size: 12px;
+      text-transform: lowercase;
+      color: #c7c7c7
+    }
+
+    .toast-basket[_ngcontent-ng-web-c28] .toast-basket-product[_ngcontent-ng-web-c28] .cont-text[_ngcontent-ng-web-c28] small[_ngcontent-ng-web-c28] span[_ngcontent-ng-web-c28] {
+      text-transform: inherit
+    }
+
+    @media only screen and (max-width:768px) {
+      .toast-basket[_ngcontent-ng-web-c28] .free-shipping-condition[_ngcontent-ng-web-c28] {
+        width: 300px
+      }
+    }

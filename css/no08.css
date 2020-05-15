@@ -1,0 +1,427 @@
+
+  @-webkit-keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  @keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  .order-status-resume {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    z-index: 8
+  }
+
+  .order-status-resume .chats-resume,
+  .order-status-resume ul {
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1
+  }
+
+  .order-status-resume li {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    margin-left: 10px;
+    padding-right: 5px
+  }
+
+  .order-status-resume .chats-resume {
+    position: relative
+  }
+
+  .order-status-resume .chats-resume.active .all-orders {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    bottom: 60px
+  }
+
+  .order-status-resume .chats-resume.not-more-orders .all-orders {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -2;
+    bottom: 40px
+  }
+
+  .order-status-resume .chats-resume.not-more-orders .number-chat {
+    display: none
+  }
+
+  .order-status-resume .chats-resume .number-chat {
+    background: #332927;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    cursor: pointer
+  }
+
+  .order-status-resume .chats-resume .number-chat p,
+  .order-status-resume .chats-resume .number-chat small {
+    position: relative
+  }
+
+  .order-status-resume .chats-resume .number-chat small {
+    display: none
+  }
+
+  .order-status-resume .chats-resume .number-chat.new-message small::after,
+  .order-status-resume .chats-resume .number-chat.new-message span::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #332927;
+    right: 6px;
+    top: 8px;
+    background: #ff2425
+  }
+
+  .order-status-item .cont-item-no-cursor .info-store .status-item-text,
+  .order-status-item .cont-status-item .info-store .status-item-text {
+    display: none
+  }
+
+  .all-orders {
+    width: 340px;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    background: #fff;
+    bottom: 40px;
+    left: 0;
+    padding: 20px 10px 20px 20px;
+    border-radius: 8px;
+    border-bottom: 2px solid #332927;
+    z-index: -2;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s linear
+  }
+
+  .all-orders::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: transparent
+  }
+
+  .all-orders::-webkit-scrollbar {
+    width: 4px
+  }
+
+  .all-orders::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fafaf8
+  }
+
+  .all-orders .iconf-cancel {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgba(51, 41, 39, .15);
+    cursor: pointer;
+    display: none;
+    line-height: 25px;
+    text-align: center
+  }
+
+  .all-orders h5 {
+    font-size: 20px;
+    font-family: Poppins-SemiBold, Helvetica, Arial, sans-serif;
+    margin-bottom: 20px
+  }
+
+  .all-orders ul {
+    -webkit-overflow-scrolling: touch;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 100%
+  }
+
+  .all-orders ul::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: transparent
+  }
+
+  .all-orders ul::-webkit-scrollbar {
+    width: 4px
+  }
+
+  .all-orders ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fafaf8
+  }
+
+  .all-orders li {
+    margin: 0 20px 10px 0;
+    position: relative;
+    display: block
+  }
+
+  .all-orders li:hover {
+    cursor: pointer
+  }
+
+  .all-orders li .cont-info .cont-img,
+  .all-orders li .cont-info .info-item {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1
+  }
+
+  .all-orders li .cont-info .cont-img {
+    width: 40px
+  }
+
+  .all-orders li .cont-info .cont-img div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 40px
+  }
+
+  .all-orders li .cont-info .cont-img img {
+    width: auto;
+    max-height: 40px;
+    display: block;
+    margin: auto
+  }
+
+  .all-orders li .cont-info .info-item {
+    width: calc(100% - 40px);
+    padding: 0 70px 0 10px
+  }
+
+  .all-orders li .cont-info .info-item small,
+  .all-orders li .cont-info .info-item span,
+  .all-orders li .cont-info .info-item strong {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%
+  }
+
+  .all-orders li .cont-info .info-item strong {
+    font-size: 16px
+  }
+
+  .all-orders li .cont-info .info-item small {
+    font-size: 12px;
+    color: #9faab7
+  }
+
+  .all-orders li .cont-info .info-item span {
+    color: #7d7d7d
+  }
+
+  .all-orders li .cont-info .icons-item {
+    position: absolute;
+    right: 0;
+    top: 0
+  }
+
+  .all-orders li .cont-info .icons-item i {
+    cursor: pointer;
+    font-size: 22px;
+    margin-left: 10px;
+    position: relative
+  }
+
+  .all-orders li .cont-info .icons-item i.new-message::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    right: -2px;
+    top: -2px;
+    background: #ff2425
+  }
+
+  .all-orders li .cont-info .icons-item .chat-widget {
+    left: auto
+  }
+
+  .all-orders li .cont-info .icons-item .chat-widget .cont-btns {
+    display: inline-block
+  }
+
+  .all-orders li .cont-info .icons-item .chat-widget .iconf-Chat {
+    margin-left: 0
+  }
+
+  .all-orders li .status-item {
+    margin: 10px 0 10px 50px;
+    background: rgba(229, 237, 239, .35);
+    border-radius: 8px;
+    padding: 10px
+  }
+
+  .all-orders li .status-item small {
+    display: block
+  }
+
+  .all-orders li .status-item p,
+  .all-orders li .status-item small {
+    font-size: 12px
+  }
+
+  .all-orders li .status-item p {
+    color: #7d7d7d
+  }
+
+  .etas .order-status-item .cont-status-item {
+    background: #fff
+  }
+
+  .etas .number-chat.hide {
+    display: none
+  }
+
+  @media only screen and (max-width:768px) {
+    .order-status-resume {
+      z-index: 8
+    }
+
+    .order-status-resume>ul {
+      display: none
+    }
+
+    .order-status-resume .chats-resume {
+      position: fixed;
+      bottom: 0;
+      z-index: 5
+    }
+
+    .order-status-resume .chats-resume .number-chat {
+      position: fixed;
+      bottom: 60px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      border-radius: 0;
+      height: inherit;
+      line-height: inherit;
+      background: #35497b;
+      font-size: 12px;
+      padding: 8px
+    }
+
+    .order-status-resume .chats-resume .number-chat span {
+      display: none
+    }
+
+    .order-status-resume .chats-resume .number-chat small {
+      display: inline-block
+    }
+
+    .order-status-resume .chats-resume .number-chat.new-message small::after {
+      top: 0;
+      right: -9px;
+      border: none
+    }
+
+    .order-status-resume .chats-resume.active .all-orders {
+      bottom: 0;
+      opacity: 1;
+      z-index: 2;
+      visibility: visible
+    }
+
+    .order-status-resume .chats-resume.active .wave-orders {
+      margin-left: -1000px;
+      margin-top: -1000px;
+      width: 2000px;
+      height: 2000px
+    }
+
+    .order-status-resume .chats-resume.active .animate-show,
+    .order-status-resume .chats-resume.active .show-orders-mobile {
+      opacity: 1;
+      visibility: visible
+    }
+
+    .all-orders {
+      position: fixed;
+      right: 0;
+      left: 0;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      visibility: hidden;
+      opacity: 0;
+      z-index: -2;
+      transition: inherit;
+      background: 0 0
+    }
+
+    .all-orders .iconf-cancel {
+      display: block
+    }
+
+    .all-orders ul {
+      width: 100%;
+      max-height: calc(100vh - 100px)
+    }
+
+    .all-orders li {
+      margin: 0 0 20px
+    }
+
+    .all-orders .wave-orders {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      left: 50%;
+      top: 50%;
+      width: 1px;
+      height: 1px;
+      border-radius: 1000px;
+      background-color: #fff;
+      transition: all .3s cubic-bezier(.95, .05, .795, .035) 280ms
+    }
+
+    .all-orders .show-orders-mobile {
+      visibility: hidden;
+      opacity: 0;
+      position: relative;
+      z-index: 1
+    }
+
+    .all-orders .animate-show {
+      transition: .3s all ease .6s;
+      overflow-y: auto;
+      max-height: 100vh;
+      opacity: 0;
+      visibility: hidden;
+      background: #fff;
+      padding: 20px
+    }
+  }

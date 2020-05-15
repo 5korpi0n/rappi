@@ -1,0 +1,125 @@
+
+  @-webkit-keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  @keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  .dropdown-user[_ngcontent-ng-web-c18] {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+    cursor: pointer;
+    height: 70px;
+    position: relative
+  }
+
+  .dropdown-user[_ngcontent-ng-web-c18] .dropwdown-user-logged[_ngcontent-ng-web-c18] {
+    height: 32px;
+    width: 32px;
+    border-radius: 34px;
+    background-color: transparent
+  }
+
+  .dropdown-user[_ngcontent-ng-web-c18] .dropwdown-user-logged[_ngcontent-ng-web-c18]>i[_ngcontent-ng-web-c18] {
+    transition: all .3s linear;
+    font-size: 33px;
+    letter-spacing: 0;
+    color: #332927
+  }
+
+  .dropdown-user[_ngcontent-ng-web-c18] .dropwdown-user-logged[_ngcontent-ng-web-c18]:hover,
+  .dropdown-user[_ngcontent-ng-web-c18] .dropwdown-user-logged[_ngcontent-ng-web-c18]:hover>i[_ngcontent-ng-web-c18] {
+    color: #ff441f
+  }
+
+  .dropdown-user[_ngcontent-ng-web-c18] .dropwdown-user-logged[_ngcontent-ng-web-c18] .user-pic[_ngcontent-ng-web-c18] {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    background-color: #7d7d7d;
+    border-radius: 50%;
+    margin-right: 2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 25%
+  }
+
+  .dropdown-user[_ngcontent-ng-web-c18] .dropwdown-user-logged[_ngcontent-ng-web-c18] a.username[_ngcontent-ng-web-c18] {
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #fff
+  }
+
+  .dropdown-user[_ngcontent-ng-web-c18] .dropwdown-user-logged[_ngcontent-ng-web-c18] a.username[_ngcontent-ng-web-c18] label[_ngcontent-ng-web-c18] {
+    transition: all .3s linear;
+    font-size: 11px;
+    color: #7d7d7d;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 3px;
+    cursor: inherit
+  }
+
+  .dropdown-user[_ngcontent-ng-web-c18] .dropwdown-user-logged[_ngcontent-ng-web-c18] a.username[_ngcontent-ng-web-c18] span[_ngcontent-ng-web-c18] {
+    text-transform: capitalize;
+    padding-right: 20px
+  }
+
+  .dropdown-user[_ngcontent-ng-web-c18] .dropwdown-user-logged[_ngcontent-ng-web-c18] a.username[_ngcontent-ng-web-c18] span[_ngcontent-ng-web-c18] i[_ngcontent-ng-web-c18] {
+    position: absolute;
+    transition: .3s transform;
+    right: 0;
+    font-size: 18px
+  }
+
+  .dropdown-user[_ngcontent-ng-web-c18] .dropwdown-user-logged[_ngcontent-ng-web-c18]:hover>i[_ngcontent-ng-web-c18] {
+    transform: rotate(-90deg)
+  }
+
+  .dropdown-user[_ngcontent-ng-web-c18] .dropdown-anonymous[_ngcontent-ng-web-c18] {
+    padding: 5px 14px;
+    font-family: Poppins-SemiBold, Helvetica, Arial, sans-serif
+  }
+
+  @media only screen and (max-width:1024px),
+  screen and (orientation:portrait) {
+    .dropdown-user[_ngcontent-ng-web-c18] {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      align-content: center;
+      height: 50px
+    }
+  }
+
+  @media only screen and (max-width:768px) {
+    .dropdown-anonymous[_ngcontent-ng-web-c18] {
+      width: 85px;
+      font-size: 12px
+    }
+  }

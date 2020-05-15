@@ -1,0 +1,224 @@
+
+  @-webkit-keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  @keyframes progress {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+  .bg-dropdown-user {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    z-index: 11
+  }
+
+  ul.drop-down-list {
+    transition: all .5s linear;
+    position: absolute;
+    top: 50px;
+    border-radius: 8px;
+    background-color: #fff;
+    border-right: 1px solid #c7c7c7;
+    border-left: 1px solid #c7c7c7;
+    border-top: 1px solid #c7c7c7;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 12;
+    right: -12px;
+    min-width: 250px
+  }
+
+  ul.drop-down-list.dropdown-open {
+    opacity: 1;
+    top: 65px;
+    z-index: 12;
+    visibility: visible
+  }
+
+  ul.drop-down-list li {
+    transition: all .3s linear;
+    font-family: Poppins-Regular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: #7d7d7d;
+    background-color: #fff;
+    padding: 15px 20px
+  }
+
+  ul.drop-down-list li .user-profile-greeting {
+    padding: 5px 0;
+    position: relative
+  }
+
+  ul.drop-down-list li .user-profile-greeting>img {
+    width: 40px;
+    height: 40px;
+    background-color: #fafaf8
+  }
+
+  ul.drop-down-list li .user-profile-greeting>p {
+    font-family: Poppins-Regular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+    color: #332927
+  }
+
+  ul.drop-down-list li .user-profile-greeting>p>b {
+    font-size: 16px
+  }
+
+  ul.drop-down-list li .user-profile-greeting .prime-user {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    bottom: 0;
+    left: -5;
+    border-radius: 50%;
+    text-align: center;
+    background: #ffd559
+  }
+
+  ul.drop-down-list li .user-profile-greeting .prime-user i {
+    color: #332927;
+    line-height: 18px;
+    font-size: 14px
+  }
+
+  ul.drop-down-list li.rappi-prime {
+    position: relative;
+    padding: 10px 10px 0
+  }
+
+  ul.drop-down-list li.rappi-prime>img {
+    border-radius: 8px
+  }
+
+  ul.drop-down-list li.rappi-prime>p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-width: 156px;
+    font-family: Poppins-Regular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: #fff
+  }
+
+  ul.drop-down-list li.rappi-prime>p>span>b {
+    font-family: Poppins-SemiBold, Helvetica, Arial, sans-serif;
+    color: #ffd559
+  }
+
+  ul.drop-down-list li.rappi-credit {
+    font-family: Poppins-Regular, Helvetica, Arial, sans-serif;
+    padding: 10px 20px 5px
+  }
+
+  ul.drop-down-list li.rappi-credit .rappicredit-text {
+    font-size: 12px;
+    text-align: left;
+    color: #ff441f
+  }
+
+  ul.drop-down-list li.rappi-credit .rappipay-text {
+    color: #332927;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 8px
+  }
+
+  ul.drop-down-list li.rappi-credit .rappipay-text img {
+    width: 42px;
+    top: 6px;
+    position: relative
+  }
+
+  ul.drop-down-list li.rappi-credit .rappicredit-quantity {
+    margin-top: 4px;
+    font-size: 16px;
+    font-family: Poppins-SemiBold, Helvetica, Arial, sans-serif;
+    color: #332927
+  }
+
+  ul.drop-down-list li.rappi-credit.active,
+  ul.drop-down-list li.rappi-credit:hover {
+    background-color: #fff;
+    cursor: inherit
+  }
+
+  ul.drop-down-list li:first-child {
+    border-bottom: 1px solid #e5edef;
+    border-radius: 12px 12px 0 0
+  }
+
+  ul.drop-down-list li:last-child {
+    border-top: 1px solid #e5edef;
+    border-radius: 0 0 8px 8px
+  }
+
+  ul.drop-down-list li:last-child a {
+    color: #332927
+  }
+
+  ul.drop-down-list li.active,
+  ul.drop-down-list li:hover {
+    background-color: rgba(255, 68, 31, .04)
+  }
+
+  ul.drop-down-list li.active a,
+  ul.drop-down-list li:hover a {
+    color: #ff2425
+  }
+
+  ul.drop-down-list .rappi-prime-link {
+    margin: -1px;
+    padding: 12px 10px
+  }
+
+  ul.drop-down-list .rappi-prime-link img {
+    width: 56px;
+    height: auto
+  }
+
+  ul.drop-down-list .rappi-prime-link .text-free-delivery,
+  ul.drop-down-list .rappi-prime-link .text-free-delivery p {
+    font-size: 10px
+  }
+
+  ul.drop-down-list .rappi-prime-link a {
+    font-size: 10px;
+    padding: 5px;
+    margin: 0
+  }
+
+  ul.drop-down-list::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -7px;
+    right: 18px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff
+  }
