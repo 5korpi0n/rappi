@@ -2857,15 +2857,6 @@ screen and (orientation: portrait) {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight
 }
-.badge {
-    background-color: #e5edef;
-    border-radius: 4px;
-    color: #333;
-    display: inline-block;
-    font-size: 12px;
-    line-height: 1em;
-    padding: .25em .4em
-}
 .logo-image-payment-method {
     width: 30px;
     margin-right: 10px
